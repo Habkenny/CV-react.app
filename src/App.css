@@ -1,0 +1,315 @@
+/* Tailwind CSS is now being used - see App.jsx for all styling */
+
+.cv-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 3px solid #2563eb;
+}
+
+.cv-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.025em;
+}
+
+.role {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.location {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #6b7280;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.contact {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.8;
+}
+
+.contact a {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+section {
+  margin-bottom: 2rem;
+  page-break-inside: avoid;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e5e7eb;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+section p {
+  color: #4b5563;
+  margin-bottom: 0.75rem;
+}
+
+section strong {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+.skills-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.skill-category h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.skill-category .grid {
+  margin-top: 0.5rem;
+}
+
+.grid li {
+  padding: 0.5rem 0.75rem;
+  background: #f3f4f6;
+  border-radius: 4px;
+  color: #374151;
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.grid li::before {
+  content: "▸";
+  position: absolute;
+  left: 0.5rem;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.item {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: #f9fafb;
+  border-radius: 6px;
+  border-left: 4px solid #2563eb;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.item h3 {
+  color: #111827;
+}
+
+.item small {
+  color: #6b7280;
+  font-style: italic;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.item ul {
+  margin-top: 0.75rem;
+  padding-left: 1.25rem;
+}
+
+.item ul li {
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 0.25rem;
+  list-style: disc;
+}
+
+.item p {
+  margin: 0.5rem 0;
+}
+
+.tech-stack {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  background: #f3f4f6;
+  border-radius: 4px;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.btn-link:hover {
+  background: #2563eb;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.2);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  color: white;
+}
+
+.links {
+  margin-top: 0.75rem;
+}
+
+.links span {
+  display: block;
+  font-size: 0.875rem;
+  color: #2563eb;
+  word-break: break-all;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem 0;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* PRINT */
+@media print {
+  body {
+    padding: 0;
+    background: white;
+  }
+
+  .cv {
+    box-shadow: none;
+    padding: 1.5cm;
+    max-width: 100%;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  a {
+    color: #1a202c;
+    text-decoration: none;
+  }
+
+  .links a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.7rem;
+  }
+
+  .item {
+    background: white;
+    box-shadow: none;
+  }
+
+  .item:hover {
+    transform: none;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cv {
+    padding: 1.5rem 1.25rem;
+    border-radius: 0;
+  }
+
+  .cv-header h1 {
+    font-size: 2rem;
+  }
+
+  .role {
+    font-size: 1.1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .btn-link {
+    width: 100%;
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
